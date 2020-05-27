@@ -10,11 +10,11 @@ var io = require('socket.io')(http);
 
 var Connector = require('./src/Connector');
 
-app.use(express.static('../client'));
+app.use(express.static('./client'));
 
 // 响应HTTP的GET方法
 app.get('/', function (req, res) {
-    res.send('Fuck World!');
+    res.send('Hello World!');
     global.console.log('request received');
 });
 
