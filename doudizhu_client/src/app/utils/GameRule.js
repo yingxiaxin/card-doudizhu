@@ -90,7 +90,7 @@ class GameRule {
         }
         let m = GameRule.valCount(cards);
         let array = [...m.values()];
-        return m.size === 2 && (array[0] === 3 || array[0] === 3);
+        return m.size === 2 && (array[0] === 3 || array[1] === 3);
     }
 
     //是否是三带一对
